@@ -799,6 +799,15 @@ body {
 .girds .girds__main .girds__header .girds__header--icons i.active {
   color: #3fb871;
 }
+@media screen and (max-width: 540px) {
+  .girds .girds__main .girds__header .filter-custom {
+    display: flex;
+    gap: 5px;
+    font-size: 12px;
+    flex-direction: column;
+    align-self: start;
+  }
+}
 .girds .girds__main .girds__product__list {
   display: flex;
   flex-direction: column;
@@ -894,6 +903,46 @@ body {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 540px) {
+  .product-detail-custom .desc__action .desc__action__item {
+    font-size: 10px;
+  }
+  .product-detail-custom .desc__content {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card-product-custom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-product-custom .card__img {
+    overflow: hidden;
+  }
+  .card-product-custom .card__img .img-big {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .card-product-custom .card-img-big-custom {
+    width: 100%;
+  }
+  .card-product-custom .card__img__detail img {
+    width: calc(20% - 10px);
+    height: 20%;
+  }
+  .card-product-custom .card__desc__quantity {
+    font-size: 10px !important;
+  }
+  .card-product-custom .card__desc__quantity .result {
+    font-size: 10px;
+  }
+  .card-product-custom .card__desc__action button {
+    font-size: 12px !important;
+  }
+}
+
 .cart .cart__main {
   padding-bottom: 214px;
 }
@@ -914,6 +963,19 @@ body {
 .cart .cart__main .cart__table {
   padding-bottom: 45px;
 }
+.cart .cart__main .cart__table .table-custom {
+  width: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width: 512px) {
+  .cart .cart__main .cart__table {
+    font-size: 10px;
+  }
+  .cart .cart__main .cart__table td img {
+    width: 50px !important;
+    height: auto;
+  }
+}
 .cart .cart__main .cart__pay {
   padding-top: 70px;
   padding-bottom: 36px;
@@ -921,16 +983,36 @@ body {
 .cart .cart__main .cart__pay table {
   width: 60% !important;
 }
-.cart .cart__main .cart__pay table th, .cart .cart__main .cart__pay table td {
+@media screen and (max-width: 512px) {
+  .cart .cart__main .cart__pay table {
+    width: 80% !important;
+    font-size: 10px;
+  }
+}
+.cart .cart__main .cart__pay table th,
+.cart .cart__main .cart__pay table td {
   padding: 30px !important;
+}
+@media screen and (max-width: 540px) {
+  .cart .cart__main .cart__pay table th,
+  .cart .cart__main .cart__pay table td {
+    padding: 8px !important;
+  }
 }
 
 table {
   width: 100%;
   border-color: #ebebeb;
 }
-table th, table td {
+table th,
+table td {
   padding: 16px;
+}
+@media screen and (max-width: 540px) {
+  table th,
+  table td {
+    padding: 8px;
+  }
 }
 table th {
   text-transform: uppercase;

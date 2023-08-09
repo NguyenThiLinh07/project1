@@ -2,20 +2,33 @@
   .cart__main {
     padding-bottom: 214px;
     .cart__title {
-        font-weight: bold;
-        color: $text-green;
-        font-size: 1.28rem;
-        padding: 3rem 0 1rem 0;
-        margin-bottom: 1rem;
-        @include flex-between;
-        span{
-          text-transform: uppercase;
-          padding-bottom: 5.7rem;
-        }
+      font-weight: bold;
+      color: $text-green;
+      font-size: 1.28rem;
+      padding: 3rem 0 1rem 0;
+      margin-bottom: 1rem;
+      @include flex-between;
+      span {
+        text-transform: uppercase;
+        padding-bottom: 5.7rem;
+      }
     }
 
     .cart__table {
       padding-bottom: 45px;
+      .table-custom {
+        width: 100%;
+        max-width: 100%;
+      }
+      @media screen and (max-width: 512px) {
+        font-size: 10px;
+        td {
+          img {
+            width: 50px !important;
+            height: auto;
+          }
+        }
+      }
     }
 
     .cart__pay {
@@ -24,8 +37,16 @@
 
       table {
         width: 60% !important;
-        th, td {
+        @media screen and (max-width: 512px) {
+          width: 80% !important;
+          font-size: 10px;
+        }
+        th,
+        td {
           padding: 30px !important;
+          @media screen and (max-width: 540px) {
+            padding: 8px !important;
+          }
         }
       }
     }
@@ -35,8 +56,12 @@
 table {
   width: 100%;
   border-color: $border-color-table;
-  th, td {
+  th,
+  td {
     padding: 16px;
+    @media screen and (max-width: 540px) {
+      padding: 8px;
+    }
   }
 
   th {
@@ -68,4 +93,3 @@ table {
     }
   }
 }
-
