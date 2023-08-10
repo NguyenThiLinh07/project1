@@ -17,7 +17,7 @@ mixin title__icons__mixin(title)
             i.fa-solid.fa-chevron-up.icon__right
 
 mixin product__detail__desc__mixin()
-    .product__detail__desc__mixin
+    .product__detail__desc__mixin.product-detail-custom
         .desc__action
             .desc__action__item.active Thông tin sản phẩm
             .desc__action__item Khách hàng đánh giá
@@ -69,9 +69,9 @@ mixin card__product__list__mixin(img,name,description,discount__price)
                 i.fa-solid.fa-heart
 
 mixin card__product__detail__mixin(img, imgDetail1, imgDetail2, imgDetail3, imgDetail4, imgDetail5,name,description,discount__price, price)
-    .card__product__detail__mixin
-        .card__img
-            img(src=img, alt="image")
+    .card__product__detail__mixin.card-product-custom
+        .card__img.card-img-big-custom
+            img(src=img, alt="image").img-big
             .card__img__detail
                 img(src=imgDetail1, alt="image")
                 img(src=imgDetail2, alt="image")

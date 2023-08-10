@@ -1,0 +1,47 @@
+.product-detail-custom {
+  @media screen and (max-width: 540px) {
+    .desc__action {
+      .desc__action__item {
+        font-size: 10px;
+      }
+    }
+    .desc__content {
+      padding: 40px 20px;
+    }
+  }
+}
+
+.card-product-custom {
+  @media screen and (max-width: 540px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card__img {
+      overflow: hidden;
+      .img-big {
+        width: 100% !important;
+        height: 100% !important;
+      }
+    }
+    .card-img-big-custom {
+      width: 100%;
+    }
+    .card__img__detail {
+      img {
+        width: calc(20% - 10px);
+        height: 20%;
+      }
+    }
+    .card__desc__quantity {
+      font-size: 10px !important;
+      .result {
+        font-size: 10px;
+      }
+    }
+    .card__desc__action {
+      button {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
